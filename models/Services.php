@@ -13,7 +13,7 @@ class Services extends Model{
 
 	// Найти всех услуг в базе
 	public function findAll() {
-		$this->_sql = 'SELECT * FROM '.$this->_table;
+		$this->_sql = 'SELECT * FROM '.$this->table();
 		$query = $this->db()->query($this->_sql, PDO::FETCH_ASSOC);
 		return $query->fetchAll();
 	}

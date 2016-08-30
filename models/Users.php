@@ -1,8 +1,9 @@
 <?php
+
 require('Model.php');
+
 class Users extends Model{
 
-	private $_table = 'users';
 	/**
 	 * Изобрел велосипед привычка
 	 */
@@ -12,7 +13,6 @@ class Users extends Model{
 			'name'=>['required', 'stringOnly', 'length:35']
 		];
 	}
-
 
 	/**
 	 * Переопределяем функцию table()

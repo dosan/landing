@@ -29,7 +29,7 @@ abstract class Model{
 	}
 
 	/**
-	 * Вернет данне в массиве
+	 * Вернет данные в массиве
 	 */
 	public function findAll() {
 		$this->_sql = 'SELECT * FROM '.$this->table();
